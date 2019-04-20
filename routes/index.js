@@ -6,4 +6,29 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Website Khach Hang' });
 });
 
+router.get('/my-account', function(req, res, next) {
+  res.render('my-account', { title: 'Website Khach Hang' });
+});
+
+router.get('/checkout', function(req, res, next) {
+  res.render('checkout', { title: 'Website Khach Hang' });
+});
+
+router.get('/wishlist', function(req, res, next) {
+  res.render('wishlist', { title: 'Website Khach Hang' });
+});
+
+router.get('/error404', function(req, res, next) {
+  res.render('error404', { title: 'Website Khach Hang' });
+});
+
+router.get('/faq', function(req, res, next) {
+  res.render('faq', { title: 'Website Khach Hang' });
+});
+
+router.get('/team', function(req, res, next) {
+  res.render('team', { title: 'Website Khach Hang' });
+});
+
+
 module.exports = router;
