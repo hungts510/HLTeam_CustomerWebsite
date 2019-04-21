@@ -41,4 +41,8 @@ router.get('/shop-grid', function(req, res, next) {
 router.get('/forgot_password', function(req, res, next) {
   res.render('forgot_password', { title: 'Website Khach Hang' });
 });
+
+router.get('/account_setting', function(req, res, next) {
+  res.render('account_setting', { title: 'Website Khach Hang' });
+});
 module.exports = router;
