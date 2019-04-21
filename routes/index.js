@@ -30,5 +30,9 @@ router.get('/team', function(req, res, next) {
   res.render('team', { title: 'Website Khach Hang' });
 });
 
+router.get('/single-product', function(req, res, next) {
+  res.render('single-product', { title: 'Website Khach Hang' });
+});
+
 
 module.exports = router;
