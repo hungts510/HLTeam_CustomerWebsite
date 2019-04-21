@@ -37,4 +37,8 @@ router.get('/single-product', function(req, res, next) {
 router.get('/shop-grid', function(req, res, next) {
   res.render('shop-grid', { title: 'Website Khach Hang' });
 });
+
+router.get('/forgot_password', function(req, res, next) {
+  res.render('forgot_password', { title: 'Website Khach Hang' });
+});
 module.exports = router;
