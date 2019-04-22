@@ -50,4 +50,8 @@ router.get('/account_setting', function(req, res, next) {
 router.get('/index', function(req, res, next) {
   res.render('index', { title: 'Website Khach Hang' });
 });
+
+router.get('/my-order', function(req, res, next) {
+  res.render('my-order', { title: 'Website Khach Hang' });
+});
 module.exports = router;
