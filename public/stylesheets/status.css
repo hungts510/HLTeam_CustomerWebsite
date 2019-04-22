@@ -1,0 +1,16 @@
+.shipping-info{padding:0 12px 8px}
+.shipping-info .shipping-delivery-info{height:20px;position:static}
+.shipping-info .shipping-delivery-info .delivery-method{vertical-align:middle;font-size:24px}
+.shipping-info .progress-bar{margin-bottom:16px}
+.shipping-info .spaceLine{height:15px}
+.shipping-info .tracking-list{border:1px solid #dadada;background-color:#eff0f5;border-radius:4px;padding:12px;position:relative}
+.shipping-info .tracking-list .view-more{cursor:pointer;margin-top:10px;text-align:center}
+.shipping-info .tracking-list-info-table{display:table;table-layout:fixed}
+.shipping-info .tracking-item{display:table-row}.shipping-info .tracking-item-time{display:table-cell;word-break:keep-all;white-space:nowrap}
+.shipping-info .tracking-item-content{padding-left:12px;display:table-cell;padding-bottom:5px}
+.shipping-info .translate{width:12px;height:12px;transform:rotate(45deg);position:absolute;background-color:#eff0f5;border-top:1px solid #dadada;border-left:1px solid #dadada;top:-6px;-ms-transform:rotate(45deg);-moz-transform:rotate(45deg);-webkit-transform:rotate(45deg);-o-transform:rotate(45deg)}
+.shipping-info .progress-info-division{position:relative;width:732px;margin:auto;margin-top:35px}
+.shipping-info .top-up-btn{height:14px;line-height:14px;background-color:transparent;font-size:14px;padding:0}
+.shipping-info .next-step-item-tail{top:5px!important}
+.shipping-info .tracking-view-btn{font-size:11px}
+.shipping-info .absolute-top-right{position:absolute;top:5px;right:12px}
