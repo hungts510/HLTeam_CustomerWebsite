@@ -58,4 +58,8 @@ router.get('/my-order', function(req, res, next) {
 router.get('/order-status', function(req, res, next) {
   res.render('order-status', { title: 'Website Khach Hang' });
 });
+
+router.get('/cart', function(req, res, next) {
+  res.render('cart', { title: 'Website Khach Hang' });
+});
 module.exports = router;
