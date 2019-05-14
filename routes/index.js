@@ -2,14 +2,12 @@ var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
 
-/* GET home page. */
-// router.get('/', function(req, res) {
-//   res.redirect('/catalog');
-// });
 
-router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Website Khach Hang' });
-});
+router.get('/', homeControllers.home);
+
+// router.get('/', function(req, res, next) {
+//   res.render('index', { title: 'Website Khach Hang' });
+// });
 
 router.get('/my-account', function(req, res, next) {
   res.render('my-account', { title: 'Website Khach Hang' });
