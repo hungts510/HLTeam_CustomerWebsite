@@ -1,5 +1,6 @@
 var express = require('express');
 var router = express.Router();
+var mysql = require('mysql');
 
 /* GET home page. */
 // router.get('/', function(req, res) {
@@ -34,12 +35,26 @@ router.get('/team', function(req, res, next) {
   res.render('team', { title: 'Website Khach Hang' });
 });
 
-router.get('/single-product', function(req, res, next) {
-  res.render('single-product', { title: 'Website Khach Hang' });
+var connection = mysql.createConnection({
+  host:'localhost',
+  user:'root',
+  password:'123456789',
+  database:'singleproduct',
+});
+connection.connect();
+
+router.get('/shop-grid', function(req, res, next){ 
+  connection.query('select * from sanpham', function(error, result, fields){
+    if(error) throw error;
+    res.render('shop-grid', { data: result });
+  });
 });
 
-router.get('/shop-grid', function(req, res, next) {
-  res.render('shop-grid', { title: 'Website Khach Hang' });
+
+
+
+router.get('/single-product', function(req, res, next) {
+  res.render('single-product', { title: 'Website Khach Hang' });
 });
 
 router.get('/forgot_password', function(req, res, next) {
