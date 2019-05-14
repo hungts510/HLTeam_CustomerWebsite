@@ -1,6 +1,7 @@
 var express = require('express');
 var router = express.Router();
 var mysql = require('mysql');
+const homeControllers = require('../controllers/homeControllers');
 
 
 router.get('/', homeControllers.home);
