@@ -40,19 +40,11 @@
                     <aside class="wedget__categories poroduct--cat">
                         <h3 class="wedget__title">Thể Loại</h3>
                         <ul>
-                            <li><a href="#">Tiểu Sử  <span>(3)</span></a></li>
-                            <li><a href="#">Kinh Doanh <span>(4)</span></a></li>
-                            <li><a href="#">Sách Nấu Ăn <span>(6)</span></a></li>
-                            <li><a href="#">Sức Khỏe & Thể Hình <span>(7)</span></a></li>
-                            <li><a href="#">Lịch Sử <span>(8)</span></a></li>
-                            <li><a href="#">Huyền Bí <span>(9)</span></a></li>
-                            <li><a href="#">Sách Cảm Hứng <span>(13)</span></a></li>
-                            <li><a href="#">Lãng Mạn <span>(20)</span></a></li>
-                            <li><a href="#">Viễn Tưởng/Ảo Tưởng <span>(22)</span></a></li>
-                            <li><a href="#">Phát Triển Bản Thân <span>(13)</span></a></li>
-                            <li><a href="#">Sách Hài Hước <span>(17)</span></a></li>
-                            <li><a href="#">Harry Potter <span>(20)</span></a></li>
-                            <li><a href="#">Âm Nhạc <span>(60)</span></a></li>
+                                <%for(var pro of cate) {%>
+                            
+                            <li><a href="#"><%= pro.name%> <span><%= pro.quantity%></span></a></li>
+                            <%}%>      
+
                         </ul>
                     </aside>
                     <aside class="wedget__categories pro--range">
@@ -78,9 +70,7 @@
                     <aside class="wedget__categories poroduct--tag">
                         <h3 class="wedget__title">Product Tags</h3>
                         <ul>     
-                                <%for(var pro of data) {%>
-                                    <li><%= pro.price %></li>    
-                                    <%}%>                                     
+                                                         
 
 
     
