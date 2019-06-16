@@ -7,7 +7,7 @@ var schema = new Schema({
     title: {type:String,required: true},
     description: {type:String,required: true},
     price: {type:Number,required: true},
-    idcategory: {type:Number,required: true},
+    nameCate: {type:String,required: true},
     Items: {type:String,required: true}
 });
 
