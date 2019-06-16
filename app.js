@@ -11,6 +11,7 @@ var checkoutRouter = require('./routes/checkout');
 var accountRouter = require('./routes/account');
 var orderRouter = require('./routes/order');
 var productRouter = require('./routes/product');
+var bodyParser = require('body-parser');
 
 var app = express();
 
@@ -34,9 +35,9 @@ app.use('/my-order', orderRouter);
 app.use('/shop',productRouter);
 
 
-// app.use(bodyParser.json());
-// app.use(bodyParser.urlencoded({ extended: true })); 
-// app.use(multer());
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true })); 
+//app.use(multer());
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

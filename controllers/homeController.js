@@ -30,6 +30,7 @@ exports.wishlist = (req, res) => {
 };
 
 exports.info = (req, res) => {
+  
     res.render('single-product', {title: 'sản phẩm'})
 };
 
