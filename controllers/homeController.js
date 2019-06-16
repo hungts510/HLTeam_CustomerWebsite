@@ -1,5 +1,12 @@
+var Product =require('../models/product');
+
 exports.home = (req, res) => {
-    res.render('index', {title: 'Trang Chủ'})
+  
+  Product.find({Items : 'newItems'},function(err,docs){
+    Product.find({Items : 'hotItems'},function(err,obj){
+      res.render('index', {title: 'Trang Chủ', newItems:docs,hotItems: obj});
+      })
+    });
   };
 
 exports.login = (req, res) => {
