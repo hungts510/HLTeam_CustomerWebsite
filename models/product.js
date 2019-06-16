@@ -8,6 +8,7 @@ var schema = new Schema({
     description: {type:String,required: true},
     price: {type:Number,required: true},
     idcategory: {type:Number,required: true},
+    Items: {type:String,required: true}
 });
 
 //xuất ra lớp mô hình Product
