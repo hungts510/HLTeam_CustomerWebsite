@@ -29,5 +29,4 @@ router.get('/my-account',csfrProtection,homeController.loginget);
 router.get('/category',homeController.category);
 
 
-
 module.exports = router;

@@ -130,87 +130,20 @@
                         <!-- End Single Tab Content -->
                         <!-- Start Single Tab Content -->
                         <div class="pro__tab_label tab-pane fade" id="nav-review" role="tabpanel">
-                            <div class="review__attribute">
-                                <h1>Khách Hàng Nhận Xét</h1>
-                                <h2>Lân Nguyễn</h2>
-                                <div class="review__ratings__type d-flex">
-                                    <div class="review-ratings">
-                                        <div class="rating-summary d-flex">
-                                            <span>Chất lượng</span>
-                                            <ul class="rating d-flex">
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                            </ul>
-                                        </div>
-
-                                        <div class="rating-summary d-flex">
-                                            <span>Giá</span>
-                                            <ul class="rating d-flex">
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="rating-summary d-flex">
-                                            <span>Đánh giá</span>
-                                            <ul class="rating d-flex">
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                            </ul>
-                                        </div>
+                            <div class="review-fieldset">
+                                <h2>Khách Hàng Nhận Xét</h2>
+                                <div class="review_form_field">
+                                    <%for(var comment of comments) {%>
+                                    <div class="input__box">
+                                        <span><%=comment.author%></span>
+                                        <textarea name="review" disabled><%=comment.content%></textarea>
                                     </div>
-                                    <div class="review-content">
-                                        <p>Lân Nguyễn</p>
-                                        <p>Review bởi Lân Nguyễn</p>
-                                        <p>Đăng ngày 20/04/2019</p>
-                                    </div>
+                                    <%}%>
                                 </div>
                             </div>
                             <div class="review-fieldset">
-                                <h2>Đánh giá của bạn:</h2>
-                                <h3>Cha Giàu Cha Nghèo</h3>
-                                <div class="review-field-ratings">
-                                    <div class="product-review-table">
-                                        <div class="review-field-rating d-flex">
-                                            <span>Chất lượng</span>
-                                            <ul class="rating d-flex">
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="review-field-rating d-flex">
-                                            <span>Giá</span>
-                                            <ul class="rating d-flex">
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                            </ul>
-                                        </div>
-                                        <div class="review-field-rating d-flex">
-                                            <span>Đánh giá</span>
-                                            <ul class="rating d-flex">
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                                <li class="off"><i class="zmdi zmdi-star"></i></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
+                                <h2>Đánh giá của bạn về:</h2>
+                                <h3><%=product.title%></h3>
                                 <div class="review_form_field">
                                     <div class="input__box">
                                         <span>Nickname</span>

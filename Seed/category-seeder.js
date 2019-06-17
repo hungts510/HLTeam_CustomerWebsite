@@ -6,21 +6,22 @@ moongose.connect('mongodb://localhost:27017/bookshop',{useNewUrlParser: true});
 
 var category = [
     new Category({
-    name: 'Sách Khám Phá',
-    quantity: 20
-    }),
-    new Category({
-        name: 'Sách Lịch Sử',
-    }),
-    new Category({
-        name: 'Sách Nấu Ăn',
+        name: 'Sách Khám Phá',
         quantity: 20
     }),
     new Category({
-        name: 'Sách Âm Nhạc',
+        name: 'Tiểu thuyết',
+        quantity: 10
+    }),
+    new Category({
+        name: 'Tự truyện',
+        quantity: 20
+    }),
+    new Category({
+        name: 'Tác phẩm văn học',
         quantity: 14
     }),new Category({
-        name: 'Truyện Cười',
+        name: 'Self Study',
         quantity: 12
     })
 ];

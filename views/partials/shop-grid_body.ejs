@@ -109,7 +109,7 @@
                     <div class="shop-grid tab-pane fade show active" id="nav-grid" role="tabpanel">
                         <div class="row">
                             <!-- Start Single Product -->
-                            <%for(var pro of data) {%>
+                            <%for(var pro of products) {%>
                             <div class="product product__style--3 col-lg-4 col-md-4 col-sm-6 col-12">
                                 <div class="product__thumb">
                                     <a class="first__img" href="/single-product?id=<%= pro._id.toString()%>"><img src="<%= pro.imagePath %>" alt="product image"></a>

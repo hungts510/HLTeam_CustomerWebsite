@@ -1,6 +1,7 @@
 var Product =require('../models/product');
 var User = require('../models/account');
 var Category = require('../models/category');
+var Comment = require('../models/comment');
 
 
 exports.home = (req, res) => {
@@ -53,9 +54,29 @@ exports.wishlist = (req, res) => {
 
 exports.info =  (req, res) => {
     Product.findOne({_id: req.param('id')},function(err, obj){
-      res.render('single-product', {title: 'sản phẩm',product: obj})
+      Comment.find({itemId : req.param('id')}, function(err, cmts) {
+      res.render('single-product', {title: 'sản phẩm',product: obj, comments: cmts});
+      })
     });
 };
+
+// exports.product =  (req, res) => {
+//   var perPage = 9
+//   var page = req.param('page')
+//   Product 
+//       .find({})
+//       .skip((perPage*page) - perPage)
+//       .limit(perPage)
+//       .exec(function(err, products) {
+//           if (err) return next(err)
+//           res.render('shop-grid', {
+//               products: products,
+//               current: page,
+//               pages: Math.ceil(count/perPage)
+//           })
+//       })
+// };
+
 
 exports.status = (req,res ) => {
    res.render('order-status', {title : 'Trạng thái đơn hàng'})
