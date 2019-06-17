@@ -29,9 +29,10 @@ exports.wishlist = (req, res) => {
     res.render('wishlist', {title: 'Danh sách sản phẩm lựa chọn'})
 };
 
-exports.info = (req, res) => {
-  
-    res.render('single-product', {title: 'sản phẩm'})
+exports.info =  (req, res) => {
+    Product.findOne({_id: req.param('id')},function(err, obj){
+      res.render('single-product', {title: 'sản phẩm',product: obj})
+    });
 };
 
 exports.status = (req,res ) => {

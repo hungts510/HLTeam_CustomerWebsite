@@ -62,19 +62,19 @@
             <div class="col-lg-6 col-12">
                 <div class="my__account__wrapper">
                     <h3 class="account__title">Đăng ký</h3>
-                    <form action="#">
+                    <form action="#" method="POST">
                         <div class="account__form">
                             <div class="input__box">
                                 <label>Họ và tên <span>*</span></label>
-                                <input type="Họ tên">
+                                <input type="Họ tên" id="name" name="name">
                             </div>
                             <div class="input__box">
                                     <label>Ngày tháng năm sinh <span>*</span></label>
-                                    <input type="date" data-date-format="DD MMMM YYYY">
+                                    <input type="date" data-date-format="DD MMMM YYYY" name="date">
                             </div>
                             <div class="input_box">
                                     <label>Quốc gia<span>*</span></label>
-                                    <select class="select__option">
+                                    <select class="select__option" name="nationality">
                                         <option>Chọn một …</option>
                                         <option>Afghanistan</option>
                                         <option>American</option>
@@ -87,18 +87,18 @@
                             </div>
                             <div class="input__box">
                                 <label>Địa chỉ email <span>*</span></label>
-                                <input type="email">
+                                <input type="email" id="email" name="email">
                             </div>
                             <div class="input__box">
                                 <label>Mật khẩu<span>*</span></label>
-                                <input type="password">
+                                <input type="password" id="password" name="password">
                             </div>
                             <div class="input__box">
                                     <label>Nhập lại mật khẩu<span>*</span></label>
-                                    <input type="password">
+                                    <input type="password" id="password2" name="password2">
                                 </div>
                             <div class="form__btn">
-                                <button>Đăng ký</button>
+                                <button type="submit">Đăng ký</button>
                             </div>
                         </div>
                     </form>

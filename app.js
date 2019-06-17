@@ -3,7 +3,8 @@ var path = require('path');
 var logger = require('morgan');
 var moongose = require('mongoose');
 
-
+const url = require('url');  
+const querystring = require('querystring'); 
 
 var index = require('./routes/index');
 var cartRouter = require('./routes/cart');
@@ -37,7 +38,7 @@ app.use('/shop',productRouter);
 
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true })); 
-//app.use(multer());
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
