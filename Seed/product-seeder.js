@@ -58,7 +58,7 @@ var product = [
         title: 'OLIO',
         description: 'Kể về câu chuyện của một phi công bị rơi máy bay trong sa mạc Sahara và được chào đón bởi một cậu bé tuyên bố mình là một hoàng tử nhỏ, từ một hành tinh khác đến. Trong quá trình sửa chữa máy bay, viên phi công đã biết cuộc đời của "hoàng tử nhỏ" và khao khát trở lại hành tinh quê hương của mình. Mặc dù được coi là một cuốn truyện thiếu nhi tinh tuyển, nhưng "Hoàng tử bé" cũng được coi là một trong những cuốn tiểu thuyết sâu sắc nhất của văn học Pháp. The Little Prince - Hoàng tử bé được nhiều đơn vị dịch và xuất bản tại Việt Nam.',
         price : 280000,
-        nameCate: 'Sách Khám Phá',
+        nameCate: 'Sách Lịch Sử',
         Items: "newItems"
     }),
     new Product({
@@ -66,7 +66,7 @@ var product = [
         title: 'Art Of Illustrator',
         description: 'Viết về cuộc đấu tranh của các thế hệ thuộc 2 dòng họ Trasks và Hamiltons sống trong thung lũng Salinas, California với nhiều vấn đề về đạo đức, đúng, sai... Cuốn tiểu thuyết được coi là tái tạo và lý giải câu chuyện kể về Cain và Abel theo Thánh Kinh. Tác giả cuốn tiểu thuyết Steinbeck coi East of Eden - Phía Đông vườn Địa đàng là cuốn tiểu thuyết lớn nhất trong cuộc đời sáng tác của ông. Cuốn tiểu thuyết đã được dịch và xuất bản tại Việt Nam.',
         price : 230000,
-        nameCate: 'Sách Khám Phá',
+        nameCate: 'Sách Lịch Sử',
         Items: "newItems"
     }),
     new Product({
@@ -74,7 +74,7 @@ var product = [
         title: 'New World For Children',
         description: 'Đây là một trong những tác phẩm có nội dung bi thảm nhất của nền văn học nhân loại. Tác giả đã dựng lên một bức tranh ảm đạm về số phận bế tắc của lớp người dưới đáy xã hội Nga, nhất là tầng lớp trẻ trong trắng, nhiều khát vọng. Trong cuốn tiểu thuyết này, Dostoyevsky đã chứng tỏ mình là một bậc thầy trong việc tìm hiểu bản chất con người. Crime and Punishment - Tội ác và trừng phạt đã được dịch và xuất bản tại Việt Nam.',        
         price : 240000,
-        nameCate: 'Sách Khám Phá',
+        nameCate: 'Sách Lịch Sử',
         Items: "newItems"
     }),
     new Product({
@@ -82,7 +82,7 @@ var product = [
         title: 'Alone Walker',
         description:'là một trong những câu chuyện Mark Twain yêu thích nhất. Câu chuyện bắt đầu khi một cặp vợ chồng trên đảo Hoàng tử Edward muốn được nhận một cậu bé mồ côi để giúp đỡ công việc của họ trên đảo. Tuy nhiên, thay vào đó, họ được cho một cô bé tóc đỏ 11 tuổi Anne Shirley. Nhiều cuộc phiêu lưu hài hước đã diễn ra với cô bé có trí tưởng tượng phong phú và khả năng tạo rắc rối này. Anne of Green Gables - Anne tóc đỏ dưới chái nhà xanh đã được dịch và xuất bản tại Việt Nam',
         price : 240000,
-        nameCate: 'Sách Khám Phá',
+        nameCate: 'Sách Lịch Sử',
         Items: "newItems"
     }),
     new Product({
@@ -90,7 +90,7 @@ var product = [
         title: 'The Hunter House',
         description:'Ở xã hội giả tưởng, mà lính cứu hỏa lại chính là “người châm mồi cho đám cháy” đó, nơi mà truyền hình phù phiếm thống trị, tri thức nông cạn, giải trí “ăn liền” được tung hê, nơi mà tàng trữ sách là phạm pháp, Fahrenheit 451- 451 độ F đã rung lên một hồi chuông cảnh báo về sự xuống cấp văn hóa trong một xã hội mà tri thức, ý tưởng sáng tạo bị ruồng bỏ đến tội nghiệp. Chính bởi vậy, dù đã hơn sáu chục năm kể từ lần đầu xuất bản, đến nay Fahrenheit 451- 451 độ F vẫn khiến người đọc nó phải choáng váng. Cuốn tiểu thuyết Fahrenheit 451 - 451 độ F này cũng đã được xuất bản tại Việt Nam.',
         price : 240000,
-        nameCate: 'Sách Khám Phá',
+        nameCate: 'Sách Lịch Sử',
         Items: "newItems"
     }),
 ];

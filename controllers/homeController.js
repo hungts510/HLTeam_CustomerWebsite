@@ -1,21 +1,43 @@
 var Product =require('../models/product');
+var User = require('../models/account');
+var Category = require('../models/category');
+
 
 exports.home = (req, res) => {
   
   Product.find({Items : 'newItems'},function(err,docs){
     Product.find({Items : 'hotItems'},function(err,obj){
-      res.render('index', {title: 'Trang Chủ', newItems:docs,hotItems: obj});
+      Category.find(function(err,cates){
+        res.render('index', {title: 'Trang Chủ', newItems:docs,hotItems: obj,cate:cates});
       })
-    });
-  };
+    })
+  });
+};
 
-exports.login = (req, res) => {
-    res.render('my-account', {title: 'Đăng nhập-Đăng Ký'})
-  };
+// exports.category = (req,res) => {
+//   // Product.find({nameCate: 'Sách Lịch Sử'},function(err,obj){
+//   //    Category.find(function(err,obj){
+//   //           res.render('category', {title: 'Cửa Hàng',data: docs,cate: obj})          
+//   //       })
+//   // })
+// }
+exports.category = (req, res) => {
+  console.log(req.param('name'));
+  Product.find({nameCate: req.param('name')},function(err,obj){
+    
+    res.render('category', {data: obj})
+    console.log(obj);
+  })
+};
+
+exports.loginget = (req, res, next ) => {
+    res.render('my-account',{csrfToken: req.csrfToken()});
+};
+
 
 exports.team = (req, res) => {
     res.render('team', {title: 'Đội Ngũ Phát Triển'})
-  };
+};
 
 exports.error = (req, res) => {
     res.render('error404', {title: 'Lỗi'})
@@ -42,3 +64,5 @@ exports.status = (req,res ) => {
 exports.forgot = (req, res) => {
   res.render('forgot_password', {title: 'Quên mật khẩu'})
 };
+
+

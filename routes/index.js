@@ -2,9 +2,13 @@ var express = require('express');
 var router = express.Router();
 const homeController = require('../controllers/homeController');
 
-router.get('/',homeController.home);
+var csrf = require('csurf');
+var csfrProtection = csrf({cookie: true});
 
-router.get('/my-account',homeController.login);
+//router.use(csfrProtection);
+
+
+router.get('/',homeController.home);
 
 router.get('/team',homeController.team);
 
@@ -19,6 +23,11 @@ router.get('/single-product',homeController.info);
 router.get('/order-status',homeController.status);
 
 router.get('/forgot',homeController.forgot);
+
+router.get('/my-account',csfrProtection,homeController.loginget);
+
+router.get('/category',homeController.category);
+
 
 
 module.exports = router;
